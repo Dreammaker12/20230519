@@ -15,8 +15,14 @@ while True:
 #learning korean
 korean = ["안녕하세요","감사합니다","사랑합니다"]
 print("다음은 한국어 연습게임입니다. 그대로 입력하세요")
+total = len(korean)
+count = 0
 for kor in korean:
     print(kor)
     m = input()
     if m != kor:
         break
+    count += 1
+print("전체 문제 개수:", total,"개")
+print("맞힌 문제 개수:", count,"개")
+print("틀린 문제 개수",total-count,"개")
